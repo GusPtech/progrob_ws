@@ -104,6 +104,7 @@
         <origin xyz = "0.0 0.0 ${base_link_height}" rpy = "0.0 0.0 0.0"/>
         <axis xyz="0 0 1"/>
         <limit lower="-${PI}" upper="${PI}" effort="${effort}" velocity="${velocity}"/>
+        <dynamics damping="${joint_damping}" friction="0.0"/>
     </joint>
 
     <joint name="first_second_joint" type="revolute">
@@ -112,6 +113,7 @@
         <origin xyz = "0.0 0.0 ${firts_link_length}" rpy = "-${PI/2} -${PI/2} 0.0"/>
         <axis xyz="0 0 1"/>
         <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+        <dynamics damping="${joint_damping}" friction="0.0"/>
     </joint>
 
     <joint name="second_third_joint" type="revolute">
@@ -120,6 +122,7 @@
         <origin xyz = "${second_link_length} 0.0 0.0" rpy = "0 0 0.0"/>
         <axis xyz="0 0 1"/>
         <limit lower="-${PI/2}" upper="${PI/2}" effort="${effort}" velocity="${velocity}"/>
+        <dynamics damping="${joint_damping}" friction="0.0"/>
     </joint>
 
 </robot>
