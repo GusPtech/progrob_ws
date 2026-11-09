@@ -27,7 +27,6 @@
             <geometry>
                 <box size="${gripper_base_length} ${gripper_base_width} ${gripper_base_height}"/>
             </geometry>
-            <material name="gray"/>
         </collision>
     </link>
 

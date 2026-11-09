@@ -1,0 +1,7 @@
+# Default initial positions for robx7's ros2_control fake system
+
+initial_positions:
+  base_first_joint: 0
+  first_second_joint: 0
+  gripper_base_finger_left: 0
+  second_third_joint: 0
